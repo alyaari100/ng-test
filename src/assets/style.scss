@@ -1,0 +1,164 @@
+
+// control theme colors from here - you can add more variables from "_variables.scss"
+$primary: #12123B;
+$secondary: #0971CE;
+$success: #00C189;
+$enable-negative-margins: true;
+$border-radius: 4px;
+$control-height: 46px;
+$enable-negative-margins: true;
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1200px,
+  xxl: 1400px
+);
+$headings-margin-bottom: 1rem;
+$enable-cssgrid: true;
+
+
+@import "bootstrap/bootstrap";  // v5.3.0 // local version so you can control imported components - please remove any unused components u don't need.
+
+.main-wrapper {
+  height: 100vh;
+}
+
+.section {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-freeform-gradient-1{
+  background-color:hsla(0,0%,100%,1);
+  background-image:
+  radial-gradient(at 66% 30%, hsla(201,58%,95%,1) 0px, transparent 50%),
+  radial-gradient(at 89% 80%, hsla(213,57%,84%,1) 0px, transparent 50%),
+  radial-gradient(at 44% 55%, hsla(210,38%,94%,1) 0px, transparent 50%),
+  radial-gradient(at 87% 21%, hsla(207,46%,75%,1) 0px, transparent 50%),
+  radial-gradient(at 10% 79%, hsla(227,57%,91%,1) 0px, transparent 50%),
+  radial-gradient(at 9% 20%, hsla(201,62%,86%,1) 0px, transparent 50%);
+}
+
+.bg-freeform-gradient{
+  background-color:hsla(0,0%,100%,1);
+  background-image:
+  radial-gradient(at 9% 50%, hsla(198,49%,87%,1) 0px, transparent 50%),
+  radial-gradient(at 61% 53%, hsla(228,72%,95%,1) 0px, transparent 50%),
+  radial-gradient(at 90% 13%, hsla(202,63%,86%,1) 0px, transparent 50%),
+  radial-gradient(at 44% 21%, hsla(201,58%,95%,1) 0px, transparent 50%),
+  radial-gradient(at 5% 12%, hsla(222,28%,95%,1) 0px, transparent 50%),
+  radial-gradient(at 46% 45%, hsla(227,57%,91%,1) 0px, transparent 50%),
+  radial-gradient(at 10% 90%, hsla(207,44%,75%,1) 0px, transparent 50%),
+  radial-gradient(at 85% 84%, hsla(223,55%,85%,1) 0px, transparent 50%);
+}
+.text-color1{
+  color: #7CB8FF;
+}
+.dark{
+  .text-color1{
+    color: #f1f4f670;
+  }
+  .text-color1:focus{
+    color: #f1f4f670;
+  }
+  .nav-pills .nav-link.active, .nav-pills .show > .nav-link{
+    background-color: inherit;
+  }
+}
+.text-color1:hover{
+  color: #fff;
+}
+.text-color1:focus{
+  color: #7CB8FF;
+}
+
+.fs-1{
+  font-size: 1em;
+}
+
+.fs-2{
+  font-size: 2em;
+}
+
+.fs-3{
+  font-size: 3em;
+}
+
+.fs-4{
+  font-size: 4em;
+}
+
+.fs-5{
+  font-size: 5em;
+}
+
+.fs-6{
+  font-size: 6em;
+}
+
+.fs-7{
+  font-size: 7em;
+}
+
+.fs-8{
+  font-size: 8em;
+}
+
+.fs-9{
+  font-size: 9em;
+}
+.p-table td {
+  padding: 0px !important;
+}
+// shadow and animation hover effects
+.hover-shadow{
+  transition: all .5s ease-in-out;
+  &:hover,
+  &:focus{
+      @extend .shadow;
+  }
+}
+.hover-x-10{
+  transition: all .5s ease-in-out;
+  &:hover,
+  &:focus{
+      transform: translateX(-10px);
+  }
+}
+.hover-y-10{
+  transition: all .5s ease-in-out;
+  &:hover,
+  &:focus{
+      transform: translateY(-10px);
+  }
+}
+.hover-x-5{
+  transition: all .5s ease-in-out;
+  &:hover,
+  &:focus{
+      transform: translateX(-5px);
+  }
+}
+.hover-y-5{
+  transition: all .5s ease-in-out;
+  &:hover,
+  &:focus{
+      transform: translateY(-5px);
+  }
+}
+.img-50{
+  width: 50px !important;
+}
+.img-60{
+  width: 60px !important;
+}
+.img-70{
+  width: 70px !important;
+}
+:host ::ng-deep.p-datatable-table tr:nth-child(even){
+  background-color: #000;
+}

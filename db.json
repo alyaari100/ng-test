@@ -1,0 +1,56 @@
+{
+  "users": [
+    {
+      "id": "5656",
+      "name": "gjgjgyj fg",
+      "email": "gyjg jfgj ",
+      "role": "Admin",
+      "status": "Active"
+    },
+    {
+      "id": "21323",
+      "name": "gjgjgyj fg",
+      "email": "gyjg jfgj ",
+      "role": "Admin",
+      "status": "Active"
+    },
+    {
+      "id": "3937",
+      "name": "gjgjgyj fg",
+      "email": "gyjg jfgj ",
+      "role": "Admin",
+      "status": "Active"
+    },
+    {
+      "id": "b9c7",
+      "name": "gjgjgyj fg",
+      "email": "gyjg jfgj ",
+      "role": "Guest",
+      "status": "Active"
+    },
+    {
+      "id": "7ffb",
+      "name": "awdaqw",
+      "email": "awefwef",
+      "role": "User",
+      "status": "InActive"
+    },
+    {
+      "id": "3fd7",
+      "name": "gjgjgyj sse",
+      "email": "gyjg jfgsevsevj ",
+      "role": "User",
+      "status": "InActive"
+    },
+    {
+      "id": "9958",
+      "name": "awefwe",
+      "email": "awef",
+      "role": "Guest",
+      "status": "InActive"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

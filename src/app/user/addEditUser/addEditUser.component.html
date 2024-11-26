@@ -1,0 +1,61 @@
+<form [formGroup]="form">
+  <div class="row">
+    <div style="margin: 10px;" class="d-flex flex-column     col-12 mb-4">
+      <label htmlFor="name">{{translateKey('name')}}<span style="color: red">*</span>
+      </label>
+      <input pInputText id="name" formControlName="name">
+      <small class="text-danger" *ngIf="form.get('name')?.touched &&
+    form.get('name')?.errors?.['required']">name is required.</small>
+
+    </div>
+
+    <div style="margin: 10px;" class="d-flex flex-column     col-12 mb-4">
+      <label htmlFor="email">{{translateKey('email')}}<span style="color: red">*</span>
+      </label>
+      <input pInputText id="email" formControlName="email">
+      <small class="text-danger" *ngIf="form.get('email')?.touched &&
+    form.get('email')?.errors?.['required']">email is required.</small>
+
+    </div>
+    <div style="margin: 10px;" class="d-flex flex-column   col-6 mb-4">
+      <label htmlFor="roles">{{translateKey('role')}}<span style="color: red">*</span>
+      </label>
+    
+      <div class="row">
+        <p-dropdown [filter]="true" filterBy="label" optionLabel="label" optionValue="value" [options]="roles"
+          formControlName="role" styleClass="w-100 over" placeholder="Select roles"></p-dropdown>
+    
+      </div>
+      <small class="text-danger" *ngIf="form.get('role')?.touched &&
+    form.get('role')?.errors?.['role']">roles is required.</small>
+    
+    </div>
+    <div style="margin: 10px;"  class="d-flex flex-column   col-6 mb-4">
+      <label htmlFor="status">{{translateKey('status')}}<span style="color: red">*</span>
+      </label>
+    
+      <div   class="row">
+        <p-dropdown [filter]="true" filterBy="label" optionLabel="label" optionValue="value" [options]="status"
+          formControlName="status" styleClass="w-100 over" placeholder="Select status"></p-dropdown>
+    
+      </div>
+      <small class="text-danger" *ngIf="form.get('status')?.touched &&
+    form.get('status')?.errors?.['status']">status is required.</small>
+    
+    </div>
+  </div>
+</form>
+
+<div class="col-12 d-flex justify-content-center">
+  <hr class="mt-5 line w-75">
+</div>
+
+<div class="d-flex justify-content-end">
+  <a pButton class="p-button p-button-outlined p-button-plain p-component p-element p-ripple m-1"
+    style="font-weight: 600" (click)="cancel()">{{'Cancel'}} </a>
+
+  <button pButton class="flex-column-reverse fo m-1  p-component p-element text-center wdr-width20"
+    style="font-weight: 500;" (click)="onSave()" [disabled]="!form.valid"> {{editMode? ('Edit ') : ('Add ')}}
+  </button>
+
+</div>
